@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ImageSearch
+
+  Created by Sebastian Ng on 2/9/15.
+  Copyright (c) 2015 Sebastian Ng. All rights reserved.
+*/
+
+"common__btn_dismiss" = "OK";
+"error__generic__alert_title" = "Oops!";
+"error__generic" = "Something's wrong and we're not sure why...";
+"error__no_network" = "Please check your Internet connection.";
+"search__recent" = "Recent";
+"results__rate_limiting" = "Slow down...";
+"results__rate_limited" = "You have used too much. Please try again later.";

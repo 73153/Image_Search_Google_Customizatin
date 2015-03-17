@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ISResult" representedClassName="ISResult" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tbUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="search" maxCount="1" deletionRule="Nullify" destinationEntity="ISSearch" inverseName="results" inverseEntity="ISSearch" syncable="YES"/>
+    </entity>
+    <entity name="ISSearch" representedClassName="ISSearch" syncable="YES">
+        <attribute name="estimatedResultCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="phrase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="results" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ISResult" inverseName="search" inverseEntity="ISResult" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ISResult" positionX="160" positionY="0" width="128" height="118"/>
+        <element name="ISSearch" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>
